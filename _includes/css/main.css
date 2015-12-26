@@ -68,11 +68,20 @@ hr {
 .center { text-align: center; }
 .left, .container .left { text-align: left; }
 
-.container h1, .container h2, .container h3, .container h4 {
+
+.container h2, .container h3, .container h4 {
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 0 4%;
+}
+
+
+.container h1 {
   margin-bottom: 20px;
   text-align: center;
   padding: 0 4%;
 }
+
 .container p, .container ol, .container ul {
   font-size: 17px;
   padding: 0 5%;
@@ -141,7 +150,7 @@ nav ul li {
   line-height:normal;
   letter-spacing:normal;
   text-transform:uppercase;
-  min-width:110px;
+  min-width:90px;
   line-height:60px;
   margin:0;
 }
@@ -258,100 +267,88 @@ nav ul li:hover, nav ul li.active {
 .longlist li { margin-bottom: 3px; }
 
 
-
-/* ----- fork on github banner ----- */
-#forkongithub a {
-  color:#fff;
-  text-decoration:none;
-  font-family:arial,sans-serif;
-  text-align:center;
-  font-weight:700;
-  font-size:1rem;
-  line-height:2rem;
-  position:relative;
-  transition:.5s;
-  padding:5px 40px;
+/* Basic Grey */
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 600px;
+    background: #F7F7F7;
 }
-#forkongithub a::before, #forkongithub a::after {
-  content:""; width:100%; display:block; position:absolute;
-  top:1px; left:0; height:1px; background:#fff;
+.basic-grey label>span {
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 5px;
+    font-size: 17px;
 }
-#forkongithub a::after { bottom:1px; top:auto; }
-@media screen and (min-width:800px) {
-  #forkongithub {
-    position:fixed;
-    display:block;
-    top:0;
-    right:0;
-    width:200px;
-    overflow:hidden;
-    height:200px;
-    z-index:9999;
-  }
-  #forkongithub a {
-    width:200px;
-    position:absolute;
-    top:60px;
-    right:-60px;
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    box-shadow:4px 4px 10px rgba(0,0,0,0.8);
-    box-sizing: content-box;
-  }
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    background: #EEEEEE;
 }
-
-
-
-/* mid size (tablets, landscapes) */
-@media only screen and (max-width: 679px) {
-  nav { font-size:11px; }
-  nav ul li {
-    min-width:60px;
-    line-height:40px;
-  }
+.basic-grey textarea{
+    padding: 5px 3px 3px 5px;
+}
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .button {
+    background: #2a617d;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    font-size: 19px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;     color: white;
+    color: white;
+}
+.basic-grey .button:hover {
+    background: #142e3b;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    font-size: 19px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;     color: white;
+    color: white;
 }
 
-/* tiny size (phones) */
-@media only screen and (max-width: 380px) {
-  nav ul li { min-width:90px; line-height:20px; }
+.social-icons {
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-/* anything not desktop */
-@media only screen and (max-width: 767px) {
-	.container h1 { font-size: 30px; }
-	.container h2 { font-size: 24px; }
-	.container h3 { font-size: 20px; }
-	.container h4 { font-size: 18px; }
+.social-icon{
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.fa-github-square {
+    color: gray;
+}
+
+.fa-linkedin-square {
+    color: gray;
+}
 
 
-  .section { padding:130px 0; }
-  .sectiondivider {
-    width:200px;
-    height:200px;
-    padding:15px;
-    top:-100px;
-    margin-left:-100px;
-  }
-  .sectiondivider img {
-    width:150px;
-    height:180px;
-  }
-  .sectiondivider .fa-stack {
-    font-size: 100px;
-    margin-top: -14px;
-  }
-  .sectiondivider h5 {
-    font-size:15px;
-    bottom:30px;
-    width:170px
-  }
+.fa-graduation-cap {
+    color: gray;
+}
 
-  .columned {
-    -webkit-column-count: 2;
-    -moz-column-count:    2;
-    column-count:         2;
-  }
+.fa-github-square:hover {
+    color: black;
+}
+
+.fa-linkedin-square:hover {
+    color: black;
+}
+
+.fa-graduation-cap:hover {
+    color: black;
 }
