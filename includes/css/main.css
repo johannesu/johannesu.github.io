@@ -34,34 +34,10 @@ a{
   margin-right: 15px;
 }
 
-.fa-github-square {
+i {
     color: gray;
 }
 
-.fa-linkedin-square {
-    color: gray;
-}
-
-.fa-graduation-cap {
-    color: gray;
-}
-
-.fa-envelope {
-    color: gray;
-}
-
-.fa-github-square:hover {
-    color: black;
-}
-
-.fa-linkedin-square:hover {
-    color: black;
-}
-
-.fa-graduation-cap:hover {
-    color: black;
-}
-
-.fa-envelope:hover {
+i:hover {
     color: black;
 }
