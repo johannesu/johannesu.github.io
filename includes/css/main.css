@@ -1,5 +1,5 @@
 body {
-  background: #e5e5e5;
+  background: #f2f1ed;
 }
 
 .about {
@@ -8,14 +8,16 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   font-family: Helvetica, sans-serif;
-  color: OliveDrab;
-  font-size: 300%;
+  color: #de5a51;
+  font-size: 250%;
+  margin-bottom: 4px;
 }
 
 h2 {
   font-family: Helvetica, sans-serif;
+  color: #333333
   margin-bottom: 4px;
 }
 
@@ -24,8 +26,12 @@ a{
   text-decoration: none;
 }
 
+a:hover {
+  color: #de5a51;
+}
+
 .social-icons {
-  text-align: center;
+  text-align: left;
   margin-top: 5px;
 }
 
@@ -35,9 +41,9 @@ a{
 }
 
 i {
-    color: gray;
+    color: #333333;
 }
 
 i:hover {
-    color: black;
+    color: #de5a51;
 }
